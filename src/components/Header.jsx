@@ -37,7 +37,7 @@ function Header() {
   return (
     <header className={`header ${scrolled ? 'scrolled' : ''}`}>
       <div className="header-content">
-        <div className="logo">Portfolio</div>
+        <div className="logo">AB</div>
         
         <div className="header-right">
           <div className="theme-switcher">

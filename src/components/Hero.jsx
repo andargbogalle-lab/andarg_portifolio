@@ -8,7 +8,7 @@ function Hero() {
         <h1 className="hero-title">
           Hi, I'm <span className="gradient-text">Andargachew Bogale</span>
         </h1>
-        <p className="hero-subtitle">Full Stack Web Developer</p>
+        <p className="hero-subtitle">Full-stack Developer</p>
         <p className="hero-description">
           I build modern web applications with clean code and intuitive design. 
           Passionate about creating scalable solutions that make a difference.
