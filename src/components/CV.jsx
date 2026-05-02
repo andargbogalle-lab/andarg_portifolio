@@ -4,30 +4,41 @@ import './CV.css';
 function CV() {
   const education = [
     {
-      degree: 'Bachelor of Science in Information Technology',
-      institution: 'Your University Name',
-      period: '2020 - 2024',
-      description: 'Focused on software development, system design, and database management.'
+      degree: 'BSc in Information Technology',
+      institution: 'Wollo University',
+      period: '2023 - Present',
+      description: 'Focused on software development and system design. Developed academic and personal projects to strengthen practical skills.'
     }
   ];
 
   const experience = [
     {
-      title: 'Full Stack Developer',
-      company: 'Company Name',
-      period: '2023 - Present',
+      title: 'Freelance Developer',
+      company: 'Remote',
+      period: '2024 - Present',
       responsibilities: [
-        'Developed and maintained web applications using React and Node.js',
-        'Built RESTful APIs and integrated with databases',
-        'Collaborated with team members on project requirements'
+        'Developed full-stack web and mobile applications',
+        'Built and integrated RESTful APIs and third-party services',
+        'Designed responsive, user-friendly interfaces',
+        'Implemented scalable and real-time system features'
       ]
     }
   ];
 
-  const certifications = [
-    'Web Development Certification',
-    'Database Management',
-    'Software Engineering Principles'
+  const skills = [
+    'Full-Stack Development: End-to-end web & mobile application development',
+    'Frontend: HTML, CSS, JavaScript, React, Flutter, Responsive Design, UI/UX Basics',
+    'Backend: Node.js, Express, Django, RESTful APIs, Authentication Systems',
+    'Database: MySQL, PostgreSQL, Database Design, Query Optimization'
+  ];
+
+  const languages = ['English', 'Amharic'];
+
+  const interests = [
+    'Web & Mobile Application Development',
+    'Learning Emerging Technologies',
+    'Problem Solving',
+    'Scalable System Design'
   ];
 
   return (
@@ -36,6 +47,24 @@ function CV() {
       <p className="section-subtitle">My professional background and qualifications</p>
       
       <div className="cv-container">
+        {/* Summary */}
+        <div className="cv-card">
+          <div className="cv-card-header">
+            <span className="cv-icon">👨‍💻</span>
+            <h3>Professional Summary</h3>
+          </div>
+          <div className="cv-content">
+            <p className="cv-description">
+              Passionate Full-Stack and Flutter Mobile Developer experienced in building modern, 
+              scalable web and mobile applications. Skilled in both frontend and backend development, 
+              creating seamless user experiences and robust server-side systems. Proficient in Django, 
+              Node.js, Express, and Flutter, with a strong focus on RESTful APIs, real-time applications, 
+              and responsive design. Committed to solving real-world problems and continuously improving 
+              technical skills.
+            </p>
+          </div>
+        </div>
+
         {/* Education */}
         <div className="cv-card">
           <div className="cv-card-header">
@@ -58,7 +87,7 @@ function CV() {
         <div className="cv-card">
           <div className="cv-card-header">
             <span className="cv-icon">💼</span>
-            <h3>Experience</h3>
+            <h3>Professional Experience</h3>
           </div>
           <div className="cv-content">
             {experience.map((exp, index) => (
@@ -76,16 +105,46 @@ function CV() {
           </div>
         </div>
 
-        {/* Certifications */}
+        {/* Skills */}
         <div className="cv-card">
           <div className="cv-card-header">
-            <span className="cv-icon">📜</span>
-            <h3>Certifications & Achievements</h3>
+            <span className="cv-icon">⚡</span>
+            <h3>Skills</h3>
           </div>
           <div className="cv-content">
             <ul className="cv-list">
-              {certifications.map((cert, index) => (
-                <li key={index} className="cv-list-item">{cert}</li>
+              {skills.map((skill, index) => (
+                <li key={index} className="cv-list-item">{skill}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        {/* Languages */}
+        <div className="cv-card">
+          <div className="cv-card-header">
+            <span className="cv-icon">🌐</span>
+            <h3>Languages</h3>
+          </div>
+          <div className="cv-content">
+            <div className="cv-languages">
+              {languages.map((lang, index) => (
+                <span key={index} className="cv-language-tag">{lang}</span>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Interests */}
+        <div className="cv-card">
+          <div className="cv-card-header">
+            <span className="cv-icon">💡</span>
+            <h3>Interests</h3>
+          </div>
+          <div className="cv-content">
+            <ul className="cv-list">
+              {interests.map((interest, index) => (
+                <li key={index} className="cv-list-item">{interest}</li>
               ))}
             </ul>
           </div>
