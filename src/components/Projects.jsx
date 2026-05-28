@@ -14,6 +14,18 @@ function Projects() {
       description: 'An efficient ticketing system for bus transportation with features for booking tickets, route management, seat selection, and payment processing.',
       technologies: ['React', 'Node.js', 'MySQL', 'Express'],
       image: '/images/bus.jpg'
+    },
+    {
+      title: 'Book Rental Management System',
+      description: 'A desktop application for managing book rentals with features for book inventory, customer management, rental tracking, and return processing. Built using Java and JDBC for database connectivity.',
+      technologies: ['Java', 'JDBC', 'MySQL', 'Swing'],
+      image: 'https://images.pexels.com/photos/1370295/pexels-photo-1370295.jpeg?auto=compress&cs=tinysrgb&w=800'
+    },
+    {
+      title: 'Dormitory Management System',
+      description: 'A comprehensive system for managing dormitory operations including student registration, room allocation, maintenance requests, and payment tracking. Developed using C# with a modern Windows Forms interface.',
+      technologies: ['C#', '.NET', 'SQL Server', 'Windows Forms'],
+      image: 'https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=800'
     }
   ];
 
