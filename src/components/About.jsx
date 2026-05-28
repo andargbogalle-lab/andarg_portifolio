@@ -11,7 +11,7 @@ function About() {
     {
       icon: '📱',
       title: 'Mobile App Development',
-      description: 'Creating cross-platform mobile applications using Flutter for iOS and Android.'
+      description: 'Creating cross-platform mobile applications for iOS and Android with modern frameworks.'
     },
     {
       icon: '🔌',
@@ -40,14 +40,13 @@ function About() {
             </h3>
             <div className="about-text">
               <p>
-                I am a motivated Full-Stack Developer and Flutter Mobile Developer with a strong 
-                interest in building efficient, scalable, and user-focused applications. I work 
-                across both frontend and backend technologies to deliver smooth digital experiences 
-                and reliable system functionality.
+                I am a motivated Full-Stack Developer with a strong interest in building efficient, 
+                scalable, and user-focused applications. I work across both frontend and backend 
+                technologies to deliver smooth digital experiences and reliable system functionality.
               </p>
               <p>
                 Through my learning and projects, I have gained hands-on experience with technologies 
-                such as Django, Node.js, Express.js, and Flutter. I enjoy designing and developing 
+                such as Django, Node.js, Express.js, and React. I enjoy designing and developing 
                 RESTful APIs, building responsive user interfaces, and creating applications that 
                 perform consistently across web and mobile platforms.
               </p>
