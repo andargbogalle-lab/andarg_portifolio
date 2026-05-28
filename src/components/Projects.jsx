@@ -18,14 +18,14 @@ function Projects() {
     {
       title: 'Book Rental Management System',
       description: 'A desktop application for managing book rentals with features for book inventory, customer management, rental tracking, and return processing. Built using Java and JDBC for database connectivity.',
-      technologies: ['Java', 'JDBC', 'MySQL', 'Swing'],
+      technologies: ['Java', 'JDBC', 'SQLite', 'Swing'],
       image: 'https://images.pexels.com/photos/1370295/pexels-photo-1370295.jpeg?auto=compress&cs=tinysrgb&w=800'
     },
     {
       title: 'Student Dormitory Management System',
       description: 'A comprehensive university dormitory management system for managing student housing, room allocation, maintenance requests, and payment tracking. Developed using C# with a modern Windows Forms interface.',
       technologies: ['C#', '.NET', 'SQL Server', 'Windows Forms'],
-      image: 'https://images.pexels.com/photos/159213/hall-of-residence-student-hostel-student-accommodation-student-residence-159213.jpeg?auto=compress&cs=tinysrgb&w=800'
+      image: 'https://images.pexels.com/photos/7944050/pexels-photo-7944050.jpeg?auto=compress&cs=tinysrgb&w=800'
     }
   ];
 
