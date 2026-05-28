@@ -25,7 +25,7 @@ function Projects() {
       title: 'Student Dormitory Management System',
       description: 'A comprehensive university dormitory management system for managing student housing, room allocation, maintenance requests, and payment tracking. Developed using C# with a modern Windows Forms interface.',
       technologies: ['C#', '.NET', 'SQL Server', 'Windows Forms'],
-      image: 'https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=800'
+      image: 'https://images.pexels.com/photos/159213/hall-of-residence-student-hostel-student-accommodation-student-residence-159213.jpeg?auto=compress&cs=tinysrgb&w=800'
     }
   ];
 
