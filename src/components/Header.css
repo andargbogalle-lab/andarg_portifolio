@@ -104,6 +104,15 @@
   position: relative;
 }
 
+.nav button.active {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.nav button.active::after {
+  width: 100%;
+}
+
 .nav button::after {
   content: '';
   position: absolute;

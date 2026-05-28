@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Header.css';
 
-function Header() {
+function Header({ activeSection, setActiveSection }) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [theme, setTheme] = useState('light');
@@ -20,9 +20,10 @@ function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navigateToSection = (id) => {
+  const handleNavClick = (section) => {
+    setActiveSection(section);
     setMenuOpen(false);
-    window.location.hash = id;
+    window.scrollTo(0, 0);
   };
 
   const changeTheme = (newTheme) => {
@@ -34,7 +35,7 @@ function Header() {
   return (
     <header className={`header ${scrolled ? 'scrolled' : ''}`}>
       <div className="header-content">
-        <div className="logo">AB</div>
+        <div className="logo" onClick={() => handleNavClick('home')} style={{ cursor: 'pointer' }}>AB</div>
         
         <div className="header-right">
           <div className="theme-switcher">
@@ -75,12 +76,42 @@ function Header() {
           </button>
 
           <nav className={`nav ${menuOpen ? 'open' : ''}`}>
-            <a href="#home" onClick={() => setMenuOpen(false)}>Home</a>
-            <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
-            <a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a>
-            <a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a>
-            <a href="#cv" onClick={() => setMenuOpen(false)}>CV</a>
-            <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
+            <button 
+              className={activeSection === 'home' ? 'active' : ''}
+              onClick={() => handleNavClick('home')}
+            >
+              Home
+            </button>
+            <button 
+              className={activeSection === 'about' ? 'active' : ''}
+              onClick={() => handleNavClick('about')}
+            >
+              About
+            </button>
+            <button 
+              className={activeSection === 'projects' ? 'active' : ''}
+              onClick={() => handleNavClick('projects')}
+            >
+              Projects
+            </button>
+            <button 
+              className={activeSection === 'skills' ? 'active' : ''}
+              onClick={() => handleNavClick('skills')}
+            >
+              Skills
+            </button>
+            <button 
+              className={activeSection === 'cv' ? 'active' : ''}
+              onClick={() => handleNavClick('cv')}
+            >
+              CV
+            </button>
+            <button 
+              className={activeSection === 'contact' ? 'active' : ''}
+              onClick={() => handleNavClick('contact')}
+            >
+              Contact
+            </button>
           </nav>
         </div>
       </div>
