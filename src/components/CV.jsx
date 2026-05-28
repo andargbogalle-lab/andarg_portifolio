@@ -27,7 +27,7 @@ function CV() {
 
   const skills = [
     'Full-Stack Development: End-to-end web & mobile application development',
-    'Frontend: HTML, CSS, JavaScript, React, Flutter, Responsive Design, UI/UX Basics',
+    'Frontend: HTML, CSS, JavaScript, React, Responsive Design, UI/UX Basics',
     'Backend: Node.js, Express, Django, RESTful APIs, Authentication Systems',
     'Database: MySQL, PostgreSQL, Database Design, Query Optimization'
   ];
@@ -55,12 +55,11 @@ function CV() {
           </div>
           <div className="cv-content">
             <p className="cv-description">
-              Passionate Full-Stack and Flutter Mobile Developer experienced in building modern, 
-              scalable web and mobile applications. Skilled in both frontend and backend development, 
-              creating seamless user experiences and robust server-side systems. Proficient in Django, 
-              Node.js, Express, and Flutter, with a strong focus on RESTful APIs, real-time applications, 
-              and responsive design. Committed to solving real-world problems and continuously improving 
-              technical skills.
+              Passionate Full-Stack Developer experienced in building modern, scalable web applications. 
+              Skilled in both frontend and backend development, creating seamless user experiences and 
+              robust server-side systems. Proficient in Django, Node.js, Express, and React, with a 
+              strong focus on RESTful APIs, real-time applications, and responsive design. Committed to 
+              solving real-world problems and continuously improving technical skills.
             </p>
           </div>
         </div>

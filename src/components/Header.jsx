@@ -20,12 +20,9 @@ function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setMenuOpen(false);
-    }
+  const navigateToSection = (id) => {
+    setMenuOpen(false);
+    window.location.hash = id;
   };
 
   const changeTheme = (newTheme) => {
@@ -78,12 +75,12 @@ function Header() {
           </button>
 
           <nav className={`nav ${menuOpen ? 'open' : ''}`}>
-            <button onClick={() => scrollToSection('home')}>Home</button>
-            <button onClick={() => scrollToSection('about')}>About</button>
-            <button onClick={() => scrollToSection('projects')}>Projects</button>
-            <button onClick={() => scrollToSection('skills')}>Skills</button>
-            <button onClick={() => scrollToSection('cv')}>CV</button>
-            <button onClick={() => scrollToSection('contact')}>Contact</button>
+            <a href="#home" onClick={() => setMenuOpen(false)}>Home</a>
+            <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
+            <a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a>
+            <a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a>
+            <a href="#cv" onClick={() => setMenuOpen(false)}>CV</a>
+            <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
           </nav>
         </div>
       </div>
