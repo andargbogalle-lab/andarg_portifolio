@@ -6,7 +6,7 @@ function Projects() {
     {
       title: 'Restaurant & Hotel Management System',
       description: 'A comprehensive management system for restaurants and hotels featuring order management, table reservations, room booking, inventory tracking, and billing system.',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
+      technologies: ['Laravel', 'PHP', 'MySQL', 'Bootstrap'],
       image: 'https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=800'
     },
     {
@@ -23,7 +23,7 @@ function Projects() {
     },
     {
       title: 'Student Dormitory Management System',
-      description: 'A comprehensive university dormitory management system for managing student housing, room allocation, maintenance requests, and payment tracking. Developed using C# with a modern Windows Forms interface.',
+      description: 'A comprehensive university dormitory management system for managing student housing, room allocation, and maintenance requests. Developed using C# with a modern Windows Forms interface.',
       technologies: ['C#', '.NET', 'SQL Server', 'Windows Forms'],
       image: 'https://images.pexels.com/photos/7944050/pexels-photo-7944050.jpeg?auto=compress&cs=tinysrgb&w=800'
     }

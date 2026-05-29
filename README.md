@@ -73,7 +73,7 @@ portfolio/
 
 ## 🎯 Featured Projects
 
-1. **Restaurant & Hotel Management System** - React, Node.js, MongoDB, Express
+1. **Restaurant & Hotel Management System** - Laravel, PHP, MySQL, Bootstrap
 2. **Bus Ticket Management System** - React, Node.js, MySQL, Express
 3. **Book Rental Management System** - Java, JDBC, SQLite, Swing
 4. **Student Dormitory Management System** - C#, .NET, SQL Server, Windows Forms
