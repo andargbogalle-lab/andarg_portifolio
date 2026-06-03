@@ -12,7 +12,7 @@ function Projects() {
     {
       title: 'Bus Ticket Management System',
       description: 'An efficient ticketing system for bus transportation with features for booking tickets, route management, seat selection, and payment processing.',
-      technologies: ['React', 'Node.js', 'MySQL', 'Express'],
+      technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
       image: '/images/bus.jpg'
     },
     {
